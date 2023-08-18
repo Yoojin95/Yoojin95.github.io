@@ -1,0 +1,213 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #a6a6a6;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.section {
+    padding: 40px;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Styling for top section */
+.top-section {
+    text-align: center;
+    padding: 80px 0; 
+    background-color: #f9f9f9; 
+}
+
+.top-content p {
+    margin: 45px 0;
+    text-align: center;
+}
+
+.top-content img {
+    max-width: 300px; 
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px; 
+}
+
+.resume-link, .contact-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px; 
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Styling for infographic section */
+.infographic-section {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.infographic h2 {
+    margin-bottom: 20px;
+}
+
+.infographic table {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.infographic table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.infographic table td:first-child {
+    font-weight: bold;
+}
+
+/* Education Section */
+.education-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center; /* Add this line */
+}
+
+.education {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.education-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.education-item h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.education-item p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+/* Styling for contact form */
+.contact-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contact-form {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="number"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-form input[type="radio"] {
+    margin: 0 5px;
+}
+
+#hourly-rate-container {
+    margin: 10px 0;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Citation section */
+.citation-section {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.citation-section p {
+    padding: 30px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Add more responsive styles as needed */
+}
