@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <title>Your Personal Website</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#top">About Me</a></li>
+          <li><a href="#infographic">Profile</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#citation">Citation</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="top" class="top-section">
+      <div class="top-content">
+        <img src="/Yoojin.png" alt="Yoojin Lee" />
+        <h1>Web Developer to be</h1>
+        <p>
+          Hey, there! I'm Yoojin Lee, <br />an enthusiastic future web developer
+          with a passion for crafting captivating online experiences. <br />With
+          a solid grasp of HTML, CSS, and JavaScript, I'm committed to building
+          user-friendly and visually appealing websites. <br />I relish
+          problem-solving and ongoing learning, eager to breathe life into
+          digital concepts. <br />
+          Let's partner up to turn your online dreams into reality!
+        </p>
+        <a href="your-resume.pdf" download class="resume-link">Resume</a>
+        <a href="#contact" class="contact-link">Contact Me</a>
+      </div>
+    </section>
+
+    <section id="infographic" class="infographic-section">
+      <div class="infographic">
+        <h2>Profile</h2>
+        <table>
+          <tr>
+            <td>Name</td>
+            <td>Yoojin Lee 이유진</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>ylee237@myseneca.ca</td>
+          </tr>
+          <tr>
+            <td>Language</td>
+            <td>Korean, English, Japanese</td>
+          </tr>
+          <tr>
+            <td>Course</td>
+            <td>WEB222</td>
+          </tr>
+          <tr>
+            <td>Section</td>
+            <td>NGG</td>
+          </tr>
+          <tr>
+            <td>Instructor</td>
+            <td>Mark Merrit 마크 메릿</td>
+          </tr>
+        </table>
+        <!--<p>Seneca Honesty Statement: ...</p>-->
+      </div>
+    </section>
+
+    <section id="education" class="education-section">
+      <div class="education">
+        <h2>Education</h2>
+        <div class="education-item">
+          <h3>HYOSUNG GIRLS' HIGHSCHOOL</h3>
+          <p>High School Diploma</p>
+          <p>Graduated: February 2013</p>
+        </div>
+        <div class="education-item">
+          <h3>KEIMYUNG UNIVERSITY</h3>
+          <p>Master's Degree in English Language and Literature</p>
+          <p>Graduated: May 2019</p>
+        </div>
+        <div class="education-item">
+          <h3>SENECA COLLEGE</h3>
+          <p>Diploma in Computer Programming and Analysis</p>
+          <p>Expected Graduate: 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="https://httpbin.org/post" method="POST">
+          <input
+            type="text"
+            id="nameInput"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            id="emailInput"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            type="text"
+            id="addressInput"
+            name="address"
+            placeholder="Address"
+            required
+          />
+          <input
+            type="text"
+            id="cityInput"
+            name="city"
+            list="cities"
+            placeholder="City"
+            required
+          />
+          <datalist id="cities">
+            <option value="Toronto"></option>
+            <option value="Vancouver"></option>
+            <option value="Montreal"></option>
+            <option value="Calgary"></option>
+          </datalist>
+          <input
+            type="text"
+            id="postalCodeInput"
+            name="postalCode"
+            placeholder="Postal Code"
+            required
+          />
+          <label>
+            <input type="radio" name="purpose" value="Question" /> Question
+            <input type="radio" name="purpose" value="Comment" /> Comment
+            <input type="radio" name="purpose" value="Hiring" /> Hiring
+          </label>
+          <div id="hourly-rate-container">
+            <label for="hourly-rate">Hourly Rate</label>
+            <input
+              type="number"
+              id="hourly-rate"
+              name="hourly-rate"
+              step="0.01"
+            />
+          </div>
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <section id="citation" class="citation-section">
+      <div class="citation-section">
+        <h3>Citation</h3>
+        <p>
+          I declare that this assignment is my own work in accordance with
+          Seneca Academic Policy. <br />No part of this assignment has been
+          copied manually<br />or electronically from any other source
+          (including web sites) <br />or distributed to other students.
+          <br />August 18, 2023
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>&copy; 2023 Yoojin Lee. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
