@@ -1,1 +1,1 @@
-# Yoojin95.github.io
+# Seneca_WEB_Repo
